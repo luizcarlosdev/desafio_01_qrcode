@@ -28,8 +28,12 @@ body {
 }
 
 #card {
-    width: 330px;
-    height: 490px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    height: 500px;
     background-color: var(--color-background-card);
     border-radius: 15px;
     padding: 14px 10px;
@@ -90,4 +94,5 @@ body {
     font-size: 15px;
     text-indent: 2px;
     line-height: 1.3em;
+    margin-bottom: 20px;
 }
