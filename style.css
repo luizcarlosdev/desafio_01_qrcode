@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+:root {
+    --color-background-body: hsl(212, 45%, 89%);
+    --color-background-card: hsl(0, 0%, 100%);
+    --color-tittle:hsl(218, 44%, 22%);
+    --color-text: hsl(220, 15%, 55%);
+}
+
+body,
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    background-color: var(--color-background-body);
+}
+
+#card {
+    width: 330px;
+    height: 490px;
+    background-color: var(--color-background-card);
+    border-radius: 15px;
+    padding: 14px 10px;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.178);
+    cursor: pointer;
+}
+
+#card-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-items: center;
+    row-gap: 18px;
+    width: 100%;
+    height: 100%;
+}
+
+#card-box-image {
+    width: 95%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+#card-box-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#card-text {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+#card-text-tittle {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 18px;
+    justify-content: center;
+    color: var(--color-tittle);
+}
+
+#card-text-description {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text);
+    font-weight: 500;
+    font-size: 15px;
+    text-indent: 2px;
+    line-height: 1.3em;
+}
